@@ -1,0 +1,27 @@
+.spgb {
+    &__donation {
+        &--deactivated {
+            background: #F3F3F4;
+            .spgb__block__body {
+                width: 75%;
+                margin: auto;
+            }
+        }
+        &--activated {
+            .spgb__block__header {
+                box-shadow: 0 -2px 0 #59CFFC;
+            }
+            .spgb__donation__active-toggle {
+                border: 1px solid #CCCCCC;
+                border-radius: 3px;
+                margin: 0;
+                line-height: 27px;
+            }
+        }
+
+        &__active-toggle {
+            margin: 15px auto;
+            vertical-align: bottom;
+        }
+    }
+}

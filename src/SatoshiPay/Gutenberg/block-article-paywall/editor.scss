@@ -1,0 +1,118 @@
+.spgb {
+    font-family: 'Helvetica Neue', Arial;
+    &__block {
+        &__header {
+            padding: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: default;
+            span {
+                vertical-align: middle;
+            }
+        }
+        &__body {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+    }
+
+    // Text align
+    &__text-align {
+        &--center {
+            text-align: center;
+        }
+        &--right {
+            text-align: right;
+        }
+    }
+
+    // Display
+    &__display {
+        &--inline-block {
+            display: inline-block;
+        }
+    }
+
+    // Flex
+    &__flex {
+        display: flex;
+        &--direction-row {
+            flex-direction: row;
+        }
+        &--space-between {
+            justify-content: space-between;
+        }
+        &--flex-end {
+            align-items: flex-end;
+        }
+    }
+
+    // Inputs
+    &__input {
+        &__text {
+            &--small {
+                width: 73px;
+            }
+        }
+        &__description {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 11px;
+            color: lighten(#32373B, 0.5);
+            strong {
+                font-weight: bold;
+                color: #32373B;
+            }
+        }
+    }
+
+    // Block: Paywall
+    &__paywall {
+        &--deactivated {
+            background: #F3F3F4;
+            .spgb__block__body {
+                width: 75%;
+                margin: auto;
+            }
+        }
+        &--activated {
+            .spgb__block__header {
+                color: #59CFFC;
+                svg {
+                    fill: #59CFFC;
+                    margin-right: 5px;
+                    vertical-align: text-bottom;
+                }
+                &:before,
+                &:after {
+                    content: ' ';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 40%;
+                    height: 2px;
+                    background: #59CFFC;
+                    margin: auto;
+                }
+                &:after {
+                    left: auto;
+                    right: 0;
+                }
+            }
+
+            .spgb__paywall__active-toggle {
+                border: 1px solid #CCCCCC;
+                border-radius: 3px;
+                margin: 0;
+                line-height: 27px;
+            }
+        }
+
+        &__active-toggle {
+            margin: 15px auto;
+            vertical-align: bottom;
+        }
+    }
+}

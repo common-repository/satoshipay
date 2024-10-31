@@ -1,0 +1,26 @@
+<div class="wrap sp__settings-page">
+  <h2 class="sp__settings-page__title"><?php _e('SatoshiPay', $this->textdomain); ?></h2>
+  <?php settings_errors( 'sp_messages' ); ?>
+  <div class="sp__settings-page__content">
+      <form class="sp__settings-page__form" method="post">
+          <!-- API Section -->
+          <?php require_once __DIR__ . '/sections/api_section.phtml'; ?>
+
+          <!-- Submit Button -->
+          <?php submit_button('Save Changes'); ?>
+      </form>
+      <div class="sp__settings-page__guide">
+          <h2>How to set up the SatoshiPay plugin</h2>
+          <p>
+              <ol>
+                <li>Register your website on the <a href="http://dashboard.satoshipay.io/">SatoshiPay Dashboard</a></li>
+                <li>Verify your identity to become eligible for payouts</li>
+                <li>Create a Stellar Wallet (<a href="https://satoshipay.zendesk.com/hc/en-us/articles/360014858012-How-can-I-set-up-my-Stellar-wallet-">read guide</a>) where you’ll receive your earnings</li>
+                <li>Copy your API credentials back here to connect your SatoshiPay account to the WordPress plugin</li>
+                <li>Create your first paid post and start earning!</li>
+              </ol>
+              More questions? Visit our <a href="http://sp.gg/help">Help Center</a>
+          </p>
+      </div>
+  </div>
+</div>

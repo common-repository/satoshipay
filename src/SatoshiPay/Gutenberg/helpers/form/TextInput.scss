@@ -1,0 +1,39 @@
+.sp-textInput {
+    position: relative;
+    display: inline-block;
+    &__label {
+        font-size: 8px;
+        line-height: 10px;
+        color: rgba(#565D66, 0.5);
+        font-weight: bold;
+        text-transform: uppercase;
+        position: absolute;
+        top: -15px;
+        left: 0;
+    }
+    // Ugly !important to overwrite WP generic styles
+    &__input {
+        color: #4A4A4A !important;
+        border: 1px solid #DDDDDD !important;
+        height: 27px !important;
+        border-radius: 3px !important;
+        vertical-align: middle;
+    }
+    &__affix {
+        font-size: 11px;
+        color: #32373B;
+        font-weight: 500;
+        line-height: 27px;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+
+    &.small {
+        .sp-textInput__input {
+            width: 73px;
+            font-size: 17px;
+            line-height: 20px;
+        }
+    }
+}

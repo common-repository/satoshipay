@@ -1,0 +1,14 @@
+.sp-checkbox {
+    &__input{
+        margin: 5px 10px 5px 0px !important;
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+    &__label{
+        vertical-align: middle;
+        color: #4A4A4A;
+        font-size: 13px;
+        line-height: 27px;
+    }
+}

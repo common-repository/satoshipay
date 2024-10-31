@@ -1,0 +1,25 @@
+.sp-button {
+    padding: 0 10px !important;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    line-height: 25px;
+    background: none;
+    font-size: 11px;
+    color: #4A4A4A;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms;
+    outline: none;
+
+    &:hover {
+        border-color: #00A0D2;
+    }
+
+    &.default {
+        background: #F7F7F7;
+    }
+
+    &.solid {
+        background: #FFF;
+    }
+}

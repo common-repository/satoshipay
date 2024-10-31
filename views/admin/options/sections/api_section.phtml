@@ -1,0 +1,43 @@
+<section class="sp__settings-page__section">
+    <h2>API Connect</h2>
+    <p>
+        Find the credentials in the API section of your <a href="https://dashboard.satoshipay.io/account" target="_blank">SatoshiPay Dashboard</a>.
+    </p>
+    <div class="sp__settings-page__field">
+        <label
+            class="sp__settings-page__field__label"
+            for="satoshipay_api_key">API Key</label>
+        <input
+            type="text"
+            class="regular-text sp__settings-page__field__input"
+            id="satoshipay_api_key"
+            placeholder="Paste API Key here"
+            name="satoshipay_api[auth_key]"
+            value="<?php echo $api['auth_key']; ?>" />
+    </div>
+    <div class="sp__settings-page__field">
+        <label
+            class="sp__settings-page__field__label"
+            for="satoshipay_api_secret">API Secret</label>
+        <input
+            type="text"
+            class="regular-text sp__settings-page__field__input"
+            id="satoshipay_api_secret"
+            placeholder="Paste API Secret here"
+            name="satoshipay_api[auth_secret]"
+            value="<?php echo $api['auth_secret']; ?>" />
+    </div>
+</section>
+
+<section class="sp__settings-page__section">
+    <h2>Update Old Paywalls</h2>
+    <p>
+        If you've used an older version of the SatoshiPay plugin, you may need to update the old paywalls in your posts. <strong>Please back up your old posts before you run the script.</strong>
+    </p>
+    <div class="sp__settings-page__field">
+        <button class="button button-secondary" id="sp__runmigration">Run update</button>
+    </div>
+    <div class="sp__settings-page__field" style="display:none;">
+        <div id="sp__migrationprogress"></div>
+    </div>
+</section>

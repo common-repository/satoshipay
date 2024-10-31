@@ -1,0 +1,287 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.sp-textInput {
+  position: relative;
+  display: inline-block; }
+  .sp-textInput__label {
+    font-size: 8px;
+    line-height: 10px;
+    color: rgba(86, 93, 102, 0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: -15px;
+    left: 0; }
+  .sp-textInput__input {
+    color: #4A4A4A !important;
+    border: 1px solid #DDDDDD !important;
+    height: 27px !important;
+    border-radius: 3px !important;
+    vertical-align: middle; }
+  .sp-textInput__affix {
+    font-size: 11px;
+    color: #32373B;
+    font-weight: 500;
+    line-height: 27px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: baseline; }
+  .sp-textInput.small .sp-textInput__input {
+    width: 73px;
+    font-size: 17px;
+    line-height: 20px; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.sp-select {
+  position: relative;
+  display: inline-block; }
+  .sp-select__label {
+    font-size: 8px;
+    line-height: 10px;
+    color: rgba(86, 93, 102, 0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: -15px;
+    left: 0; }
+  .sp-select__input {
+    color: #4A4A4A !important;
+    font-size: 13px !important;
+    line-height: 16px !important;
+    height: 27px !important;
+    border: 1px solid #DDDDDD !important;
+    border-radius: 3px !important; }
+  .sp-select.small .sp-select__input {
+    width: 73px; }
+  .sp-select.large .sp-select__input {
+    width: 148px; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.sp-button {
+  padding: 0 10px !important;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  line-height: 25px;
+  background: none;
+  font-size: 11px;
+  color: #4A4A4A;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  outline: none; }
+  .sp-button:hover {
+    border-color: #00A0D2; }
+  .sp-button.default {
+    background: #F7F7F7; }
+  .sp-button.solid {
+    background: #FFF; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.sp-checkbox__input {
+  margin: 5px 10px 5px 0px !important; }
+  .sp-checkbox__input:focus {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+
+.sp-checkbox__label {
+  vertical-align: middle;
+  color: #4A4A4A;
+  font-size: 13px;
+  line-height: 27px; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.crypto-to-fiat {
+  color: #32373B;
+  font-size: 11px;
+  line-height: 12px;
+  display: inline-block;
+  margin-left: 5px; }
+  .crypto-to-fiat__content {
+    display: inline-block;
+    opacity: 0.5; }
+  .crypto-to-fiat__loader {
+    font-size: 11px;
+    line-height: 12px;
+    cursor: pointer;
+    fill: #468EBA;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    vertical-align: bottom; }
+    .crypto-to-fiat__loader:hover {
+      opacity: 1; }
+    .crypto-to-fiat__loader.loading {
+      -webkit-animation: loadingIconAnimation 1.2s infinite;
+              animation: loadingIconAnimation 1.2s infinite; }
+
+@-webkit-keyframes loadingIconAnimation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  100% {
+    -webkit-transform: rotate(1800deg);
+            transform: rotate(1800deg); } }
+
+@keyframes loadingIconAnimation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  100% {
+    -webkit-transform: rotate(1800deg);
+            transform: rotate(1800deg); } }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.spgb {
+  font-family: 'Helvetica Neue', Arial; }
+  .spgb__block__header {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default; }
+    .spgb__block__header span {
+      vertical-align: middle; }
+  .spgb__block__body {
+    font-size: 14px;
+    line-height: 18px; }
+  .spgb__text-align--center {
+    text-align: center; }
+  .spgb__text-align--right {
+    text-align: right; }
+  .spgb__display--inline-block {
+    display: inline-block; }
+  .spgb__flex {
+    display: -ms-flexbox;
+    display: flex; }
+    .spgb__flex--direction-row {
+      -ms-flex-direction: row;
+          flex-direction: row; }
+    .spgb__flex--space-between {
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+    .spgb__flex--flex-end {
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .spgb__input__text--small {
+    width: 73px; }
+  .spgb__input__description {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 11px;
+    color: #33383c; }
+    .spgb__input__description strong {
+      font-weight: bold;
+      color: #32373B; }
+  .spgb__paywall--deactivated {
+    background: #F3F3F4; }
+    .spgb__paywall--deactivated .spgb__block__body {
+      width: 75%;
+      margin: auto; }
+  .spgb__paywall--activated .spgb__block__header {
+    color: #59CFFC; }
+    .spgb__paywall--activated .spgb__block__header svg {
+      fill: #59CFFC;
+      margin-right: 5px;
+      vertical-align: text-bottom; }
+    .spgb__paywall--activated .spgb__block__header:before, .spgb__paywall--activated .spgb__block__header:after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 40%;
+      height: 2px;
+      background: #59CFFC;
+      margin: auto; }
+    .spgb__paywall--activated .spgb__block__header:after {
+      left: auto;
+      right: 0; }
+  .spgb__paywall--activated .spgb__paywall__active-toggle {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    margin: 0;
+    line-height: 27px; }
+  .spgb__paywall__active-toggle {
+    margin: 15px auto;
+    vertical-align: bottom; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.my-container-class-name {
+  width: 120px; }
+
+.components-popover:not(.is-mobile) .components-popover__content {
+  min-width: 150px; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.spgb__donation--deactivated {
+  background: #F3F3F4; }
+  .spgb__donation--deactivated .spgb__block__body {
+    width: 75%;
+    margin: auto; }
+
+.spgb__donation--activated .spgb__block__header {
+  -webkit-box-shadow: 0 -2px 0 #59CFFC;
+          box-shadow: 0 -2px 0 #59CFFC; }
+
+.spgb__donation--activated .spgb__donation__active-toggle {
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  margin: 0;
+  line-height: 27px; }
+
+.spgb__donation__active-toggle {
+  margin: 15px auto;
+  vertical-align: bottom; }

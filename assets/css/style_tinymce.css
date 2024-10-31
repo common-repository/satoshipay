@@ -1,0 +1,58 @@
+img.satoshipay-tinymce-placeholder-start {
+  background: transparent url(../images/tinymce-start.png) no-repeat scroll center center;
+  cursor: default;
+  display: block;
+  height: 16px;
+  margin: 15px auto 0;
+  width: 95%;
+}
+
+img.satoshipay-tinymce-placeholder-image {
+  background: #f2fcfe url(../images/tinymce-image.png) no-repeat 15px 15px;
+  border: 1px solid #f2fcfe;
+  cursor: default;
+  display: block;
+  height: 200px;
+  margin: 0;
+  width: 300px;
+}
+
+img.satoshipay-tinymce-placeholder-audio {
+  background: #f2fcfe url(../images/tinymce-audio.png) no-repeat 15px 15px;
+  border: 1px solid #f2fcfe;
+  cursor: default;
+  display: block;
+  height: 70px;
+  margin: 0;
+  width: 100%;
+}
+
+img.satoshipay-tinymce-placeholder-video {
+  background: #f2fcfe url(../images/tinymce-video.png) no-repeat 15px 15px;
+  border: 1px solid #f2fcfe;
+  cursor: default;
+  display: block;
+  height: 200px;
+  margin: 0;
+  width: 300px;
+}
+
+img.satoshipay-tinymce-placeholder-download {
+  background: #f2fcfe url(../images/tinymce-download.png) no-repeat 15px 15px;
+  border: 1px solid #f2fcfe;
+  cursor: default;
+  display: block;
+  height: 70px;
+  margin: 0;
+  width: 100%;
+}
+
+img.satoshipay-tinymce-placeholder-donation {
+  background: #f2fcfe url(../images/tinymce-donation.png) no-repeat 15px 15px;
+  border: 1px solid #f2fcfe;
+  cursor: default;
+  display: block;
+  height: 70px;
+  margin: 0;
+  width: 100%;
+}
